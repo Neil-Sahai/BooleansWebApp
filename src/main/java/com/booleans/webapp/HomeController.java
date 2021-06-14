@@ -11,4 +11,9 @@ public class HomeController {
     public String Index() {
         return "index";
     }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/about")
+    public String About() {
+        return "about";
+    }
 }
